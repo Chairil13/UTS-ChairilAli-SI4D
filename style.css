@@ -1,0 +1,36 @@
+body {
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#particles-js {
+    position: relative;
+
+    height: 100%;
+    background-image: url(https://i.pinimg.com/originals/70/7c/3a/707c3a6a176d6d7c32de951467ae946b.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.background_tambahan {
+    position: relative;
+    background: url("http://unsplash.it/1200x800") center center no-repeat;
+    background-size: cover;
+}
+.background_tambahan:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, #002f4b, #dc4225);
+    opacity: 0.6;
+    z-index: -1;
+}
